@@ -87,7 +87,7 @@ class Cityscape_Dataset(Dataset):
   map each 
   
   '''
-  def __init__(self, root_dir,x_dir_name ,y_dir_name,meta_data ,mode, input_type, output_type ,transform = None, mode_data = 'normal'):
+  def __init__(self, root_dir,x_dir_name ,y_dir_name,meta_data ,mode, input_type, output_type ,transform = None, mode_data = 'normal', device = 'cpu'):
     """
     Assume repo structure
 
