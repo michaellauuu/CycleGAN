@@ -1,4 +1,8 @@
 # borrowed from here: https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/da39a525eb793614807db4330cfe9b2157bbe33a/models/networks.py#L539
+import torch.nn as nn
+import functools
+
+
 
 class NLayerDiscriminator(nn.Module):
     """Defines a PatchGAN discriminator"""

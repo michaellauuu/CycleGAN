@@ -1,4 +1,5 @@
 import torch
+import torch.nn as nn
 
 from nn.cyclegan import *
 import pytorch_lightning as pl
