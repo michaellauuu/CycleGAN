@@ -1,5 +1,5 @@
 import torch
-import plotly as plt
+import matplotlib.pyplot as plt
 
 def show_img(img,  resize = True, title = None):
   '''
