@@ -24,7 +24,7 @@ class CycleGAN_PL(pl.LightningModule):
     self.loss_gan = nn.BCEWithLogitsLoss()
     self.loss_cycle = nn.L1Loss() 
 
-    self.device = device
+    #self.device = device
 
 
   def configure_optimizers(self):
