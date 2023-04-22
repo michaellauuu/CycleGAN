@@ -127,6 +127,7 @@ class Cityscape_Dataset(Dataset):
     self.output_type = output_type
     self.transform = transform
     self.mode_data = mode_data
+    self.device = device
 
 
     # other paths
@@ -346,4 +347,4 @@ class Cityscape_Dataset(Dataset):
     #return self.data  
 
     # we only need A and B for cycleGAN
-    return self.data['A'].to(device), self.data['B'].to(device)
+    return self.data['A'].to(self.device), self.data['B'].to(self.device)
